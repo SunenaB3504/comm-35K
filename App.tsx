@@ -1,3 +1,4 @@
+console.log('DEBUG: App.tsx: Script start. This file has been imported.');
 import React, { useState, useCallback } from 'react';
 import { MindMapNodeData, StorySegment } from './types.ts';
 import { INITIAL_MIND_MAP_DATA } from './constants.ts';
@@ -5,6 +6,7 @@ import { ContentReaderModal } from './components/ContentReaderModal.tsx';
 import { MindMap } from './components/MindMap.tsx';
 
 const App: React.FC = () => {
+  console.log('DEBUG: App.tsx: App component is rendering.');
   const [mindMapData] = useState<MindMapNodeData>(INITIAL_MIND_MAP_DATA);
   const [selectedNodeContent, setSelectedNodeContent] = useState<StorySegment[] | null>(null);
 
