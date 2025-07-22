@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KnowledgeCompass</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Add Babel Standalone for in-browser JSX/TSX transpilation -->
+    <script src="https://unpkg.com/@babel/standalone@7.24.7/babel.min.js"></script>
     <style>
         .custom-scrollbar::-webkit-scrollbar {
             width: 8px;
@@ -35,7 +37,8 @@
 </head>
 <body class="bg-gray-900">
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
+    <!-- Update script type to be processed by Babel -->
+    <script type="text/babel" data-type="module" src="/comm-35K/index.tsx"></script>
 <script type="module" src="/index.tsx"></script>
 </body>
 </html>

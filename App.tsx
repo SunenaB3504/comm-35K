@@ -1,8 +1,8 @@
 import React, { useState, useCallback } from 'react';
-import { MindMapNodeData, StorySegment } from './types';
-import { INITIAL_MIND_MAP_DATA } from './constants';
-import { ContentReaderModal } from './components/ContentReaderModal';
-import { MindMap } from './components/MindMap';
+import { MindMapNodeData, StorySegment } from './types.ts';
+import { INITIAL_MIND_MAP_DATA } from './constants.ts';
+import { ContentReaderModal } from './components/ContentReaderModal.tsx';
+import { MindMap } from './components/MindMap.tsx';
 
 const App: React.FC = () => {
   const [mindMapData] = useState<MindMapNodeData>(INITIAL_MIND_MAP_DATA);

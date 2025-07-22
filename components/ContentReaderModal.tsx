@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { StorySegment, Speaker } from '../types';
-import { SpeechService } from '../services/speechService';
-import { PlayIcon, PauseIcon, StopIcon, XMarkIcon, SparklesIcon, SpinnerIcon } from './Icons';
+import { StorySegment, Speaker } from '../types.ts';
+import { SpeechService } from '../services/speechService.ts';
+import { PlayIcon, PauseIcon, StopIcon, XMarkIcon, SparklesIcon, SpinnerIcon } from './Icons.tsx';
 import { GoogleGenAI } from '@google/genai';
 
 interface ContentReaderModalProps {

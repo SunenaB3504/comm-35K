@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
-import { MindMapNodeData } from '../types';
-import { BookOpenIcon } from './Icons';
+import { MindMapNodeData } from '../types.ts';
+import { BookOpenIcon } from './Icons.tsx';
 
 interface MindMapNodeProps {
   node: MindMapNodeData;

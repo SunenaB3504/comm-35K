@@ -1,6 +1,6 @@
 
 
-import { MindMapNodeData, Speaker, StorySegment } from './types';
+import { MindMapNodeData, Speaker, StorySegment } from './types.ts';
 
 const calculateReadingTime = (content: StorySegment[] | null): string | undefined => {
     if (!content || content.length === 0) {

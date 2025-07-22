@@ -1,5 +1,6 @@
 
-import { Speaker } from '../types';
+
+import { Speaker } from '../types.ts';
 
 export class SpeechService {
   private synthesis: SpeechSynthesis;
